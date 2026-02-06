@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="id">
 <head>
     <meta charset="UTF-8">
@@ -44,10 +44,6 @@
             <p>Kedokteran & Filsafat</p>
         </div>
         <!-- Tambah kartu untuk 9 tokoh lain di sini -->
-        <div class="tokoh-card">
-            <img src="https://via.placeholder.com/100" alt="Nabi Muhammad">
-            <h4>Nabi Muhammad SAW</h4>
-            <p>Kepemimpinan & Dakwah</p>
         </div>
         <div class="tokoh-card">
             <img src="https://via.placeholder.com/100" alt="Abu Bakar">
@@ -59,10 +55,6 @@
             <h4>Imām Syāfi‘ī</h4>
             <p>Hukum Islam</p>
         </div>
-        <div class="tokoh-card">
-            <img src="https://via.placeholder.com/100" alt="Rābi‘ah al-‘Adawiyyah">
-            <h4>Rābi‘ah al-‘Adawiyyah</h4>
-            <p>Tasawuf & Spiritualitas</p>
         </div>
         <div class="tokoh-card">
             <img src="https://via.placeholder.com/100" alt="Imām al-Ghazālī">
@@ -74,20 +66,6 @@
             <h4>Shalāhuddīn al-Ayyūbī</h4>
             <p>Kepemimpinan Militer</p>
         </div>
-        <div class="tokoh-card">
-            <img src="https://via.placeholder.com/100" alt="Ibnu Khaldun">
-            <h4>Ibnu Khaldun</h4>
-            <p>Sejarah & Sosiologi</p>
-        </div>
-        <div class="tokoh-card">
-            <img src="https://via.placeholder.com/100" alt="Al-Rāzī">
-            <h4>Al-Rāzī</h4>
-            <p>Kedokteran</p>
-        </div>
-        <div class="tokoh-card">
-            <img src="https://via.placeholder.com/100" alt="Ibn al-Haytham">
-            <h4>Ibn al-Haytham</h4>
-            <p>Optik & Matematika</p>
         </div>
     </div>
 </div>
@@ -110,14 +88,13 @@
         <p>توفي ابن سينا في عام 1037 ميلادي في همدان، بعد حياة مليئة بالإنجازات. ترك إرثاً علمياً هائلاً، حيث أثرت أعماله على العلماء في أوروبا والشرق الأوسط. يُعتبر رمزاً للعلم الإسلامي، ويُدرس في الجامعات حتى اليوم. قصته تلهم الطلاب للدراسة الجادة والابتكار في العلوم.</p>
         <p><strong>Mufradāt Penting (Disesuaikan):</strong></p>
         <ul>
-            <li>وُلِدَ (wulida) - lahir</li>
-            <li>القرآن الكريم (al-Qur'ān al-Karīm) - Al-Qur'an</li>
-            <li>الطب (al-Ṭibb) - kedokteran</li>
-            <li>الفلسفة (al-Falsafah) - filsafat</li>
-            <li>القانون (al-Qānūn) - hukum/aturan</li>
-            <li>الشفاء (asy-Syifā') - penyembuhan</li>
-            <li>الإرث (al-Irts) - warisan</li>
-            <li>الابتكار (al-Ibtikār) - inovasi</li>
+            <li>وُلِدَ (wulida) </li>
+            <li>الطب (al-Ṭibb) </li>
+            <li>الفلسفة (al-Falsafah) </li>
+            <li>القانون (al-Qānūn) </li>
+            <li>الشفاء (asy-Syifā') </li>
+            <li>الإرث (al-Irts) </li>
+            <li>الابتكار (al-Ibtikār) </li>
         </ul>
         <p><strong>Soal Pemahaman (Minimal 6 Soal):</strong></p>
         <ol>
