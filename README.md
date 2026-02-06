@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
@@ -15,6 +15,20 @@
         .tokoh-card img { width: 100px; height: 100px; border-radius: 50%; }
         .maharah { margin-top: 20px; }
         .maharah h3 { color: #e74c3c; }
+        .detail-content {
+            margin-top: 10px;
+            padding: 15px;
+            border-top: 1px solid #ddd;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            display: none; /* Tersembunyi secara default */
+        }
+        .detail-content h2, .detail-content h3 {
+            color: #2c3e50;
+        }
+        .detail-content ul, .detail-content ol {
+            margin-left: 20px;
+        }
         footer { background-color: #2c3e50; color: white; text-align: center; padding: 10px; margin-top: 20px; }
     </style>
 </head>
@@ -39,175 +53,119 @@
     <h3>Pilih Tokoh</h3>
     <div class="tokoh-grid">
         <div class="tokoh-card" onclick="toggleDetail('ibnu-sina-detail')">
-    <img src="https://via.placeholder.com/100" alt="Ibnu Sīnā"> <!-- Ganti dengan URL gambar asli jika ada -->
-    <h4>Ibnu Sīnā</h4>
-    <p>Kedokteran & Filsafat</p>
-    <div id="ibnu-sina-detail" class="detail-content" style="display: none;">
-        <h2>Halaman Tokoh: Ibnu Sīnā (Avicenna)</h2>
-        <div class="profil">
-            <h3>Profil Singkat</h3>
-            <p><strong>Nama Lengkap:</strong> أبو علي الحسين بن عبد الله بن سينا (Abū ‘Alī al-Ḥusayn ibn ‘Abd Allāh ibn Sīnā)</p>
-            <p><strong>Tahun Hidup:</strong> 980–1037 M</p>
-            <p><strong>Bidang Keilmuan:</strong> الطب والفلسفة (Kedokteran dan Filsafat)</p>
-            <p><strong>Julukan:</strong> الشيخ الرئيس (Asy-Syaikh ar-Ra'is) atau "Pangeran Para Dokter"</p>
-            <p><strong>Deskripsi:</strong> Ibnu Sīnā adalah filsuf dan dokter Muslim terkemuka yang berkontribusi besar dalam ilmu kedokteran dan filsafat. Karyanya seperti "Al-Qānūn fī al-Ṭibb" menjadi dasar kedokteran modern.</p>
+            <img src="https://via.placeholder.com/100" alt="Ibnu Sīnā">
+            <h4>Ibnu Sīnā</h4>
+            <p>Kedokteran & Filsafat</p>
+            <div id="ibnu-sina-detail" class="detail-content">
+                <h2>Halaman Tokoh: Ibnu Sīnā (Avicenna)</h2>
+                <div class="profil">
+                    <h3>Profil Singkat</h3>
+                    <p><strong>Nama Lengkap:</strong> أبو علي الحسين بن عبد الله بن سينا (Abū ‘Alī al-Ḥusayn ibn ‘Abd Allāh ibn Sīnā)</p>
+                    <p><strong>Tahun Hidup:</strong> 980–1037 M</p>
+                    <p><strong>Bidang Keilmuan:</strong> الطب والفلسفة (Kedokteran dan Filsafat)</p>
+                    <p><strong>Julukan:</strong> الشيخ الرئيس (Asy-Syaikh ar-Ra'is) atau "Pangeran Para Dokter"</p>
+                    <p><strong>Deskripsi:</strong> Ibnu Sīnā adalah filsuf dan dokter Muslim terkemuka yang berkontribusi besar dalam ilmu kedokteran dan filsafat. Karyanya seperti "Al-Qānūn fī al-Ṭibb" menjadi dasar kedokteran modern.</p>
+                </div>
+                <div class="maharah">
+                    <h3>📖 Qirā’ah — Membaca Biografi</h3>
+                    <p><strong>Teks Biografi (3 Paragraf):</strong></p>
+                    <p>وُلِدَ ابن سينا في قرية أفشينة قرب بخارى في عام 980 ميلادي. بدأ تعليمه في سن مبكرة، حيث درس القرآن الكريم والعلوم الأساسية مثل الرياضيات والفلسفة. كان ذكياً جداً، فقد حفظ القرآن في سن السابعة عشرة وأصبح معروفاً بمعرفته الواسعة في مجالات متعددة. سافر إلى مدن مختلفة مثل نيسابور وبغداد ليدرس تحت إشراف علماء كبار، مما ساعده في تطوير معرفته.</p>
+                    <p>في مجال الطب، كتب ابن سينا كتاب "القانون في الطب" الذي يُعتبر أحد أهم الكتب الطبية في التاريخ. هذا الكتاب يغطي مواضيع مثل تشخيص الأمراض، علاجها، والأدوية. كما ساهم في الفلسفة من خلال كتابه "الشفاء" الذي يناقش قضايا مثل وجود الله والنفس البشرية. كان يعتقد أن العلم يجب أن يخدم الإنسانية، ولهذا السبب كتب باللغة العربية ليصل إلى جمهور أوسع.</p>
+                    <p>توفي ابن سينا في عام 1037 ميلادي في همدان، بعد حياة مليئة بالإنجازات. ترك إرثاً علمياً هائلاً، حيث أثرت أعماله على العلماء في أوروبا والشرق الأوسط. يُعتبر رمزاً للعلم الإسلامي، ويُدرس في الجامعات حتى اليوم. قصته تلهم الطلاب للدراسة الجادة والابتكار في العلوم.</p>
+                    <p><strong>Mufradāt Penting (Disesuaikan):</strong></p>
+                    <ul>
+                        <li>وُلِدَ (wulida)</li>
+                        <li>الطب (al-Ṭibb)</li>
+                        <li>الفلسفة (al-Falsafah)</li>
+                        <li>القانون (al-Qānūn)</li>
+                        <li>الشفاء (asy-Syifā')</li>
+                        <li>الإرث (al-Irts)</li>
+                        <li>الابتكار (al-Ibtikār)</li>
+                    </ul>
+                    <p><strong>Soal Pemahaman (Minimal 6 Soal):</strong></p>
+                    <ol>
+                        <li>أين وُلِدَ ابن سينا؟</li>
+                        <li>ما هو الكتاب الشهير الذي كتبه ابن سينا في الطب؟</li>
+                        <li>ما هي اللغة التي كتب بها ابن سينا أعماله؟</li>
+                        <li>في أي عام توفي ابن سينا؟</li>
+                        <li>ما هو مجال علم آخر الذي ساهم فيه ابن سينا غير الطب؟</li>
+                        <li>لماذا يُعتبر ابن سينا رمزاً للعلم الإسلامي؟</li>
+                    </ol>
+                    <p>(Jawaban: 1. قرية أفشينة قرب بخارى. 2. القانون في الطب. 3. اللغة العربية. 4. 1037 ميلادي. 5. الفلسفة. 6. بسبب إنجازاته العلمية وتأثيره على العالم.)</p>
+                </div>
+                <div class="maharah">
+                    <h3>✍️ Kitābah — Menulis tentang Tokoh</h3>
+                    <p><strong>Latihan:</strong></p>
+                    <ul>
+                        <li>Melengkapi kalimat: "ابن سينا هو عالم في مجال __________." (Ibnu Sīnā adalah ilmuwan di bidang __________.)</li>
+                        <li>Menyusun paragraf acak: Susun kalimat berikut menjadi paragraf: "كتب كتاب الشفاء. ساهم في الفلسفة. ابن سينا عالم مسلم."</li>
+                        <li>Menulis tokoh favorit: "اكتب فقرة قصيرة عن ابن سينا (٥–٧ جمل)." (Tulis paragraf pendek tentang Ibnu Sīnā, 5–7 kalimat.)</li>
+                    </ul>
+                    <p>(Fitur: Siswa bisa ketik di textarea di bawah ini.)</p>
+                    <textarea rows="5" placeholder="Tulis jawabanmu di sini..."></textarea>
+                </div>
+                <div class="maharah">
+                    <h3>🗣️ Kalām — Menceritakan Tokoh</h3>
+                    <p><strong>Aktivitas:</strong></p>
+                    <ul>
+                        <li>Dialog pendek: "من هو ابن سينا؟ هو عالم مسلم في مجال الطب والفلسفة." (Siapa Ibnu Sīnā? Dia adalah ilmuwan Muslim di bidang kedokteran dan filsafat.)</li>
+                        <li>Monolog: "ابن سينا ولد في عام 980. ساهم في الطب من خلال كتاب القانون. توفي في 1037." (Ibnu Sīnā lahir pada tahun 980. Dia berkontribusi dalam kedokteran melalui buku Al-Qānūn. Dia meninggal pada 1037.)</li>
+                    </ul>
+                    <p>(Fitur: Rekam audio/video di browser modern, atau tirukan audio contoh. Praktikkan di kelas.)</p>
+                </div>
+                <div class="maharah">
+                    <h3>🎧 Istimā’ — Menyimak Kisah Tokoh</h3>
+                    <p><strong>Isi:</strong> Audio kisah singkat (1–2 menit): "استمع إلى النص: ابن سينا عالم مسلم كبير. ولد في 980 وتوفي في 1037. كتب كتاب القانون في الطب الذي أثر على العالم." (Dengarkan teks: Ibnu Sīnā adalah ilmuwan Muslim besar. Lahir pada 980 dan meninggal pada 1037. Dia menulis buku Al-Qānūn tentang kedokteran yang mempengaruhi dunia.)</p>
+                    <p>(Placeholder: Tambah file audio MP3 di sini, misalnya <audio controls><source src="audio-ibnu-sina.mp3"></audio>)</p>
+                    <p><strong>Soal Setelah Mendengar:</strong></p>
+                    <ol>
+                        <li>في أي عام ولد ابن سينا؟ (Pada tahun berapa Ibnu Sīnā lahir?) - Pilihan: 980, 1000, 1037</li>
+                        <li>ما هو الكتاب الذي ذكر في النص؟ (Apa buku yang disebutkan dalam teks?) - Pilihan: الشفاء, القانون, القرآن</li>
+                        <li>هل أثر كتاب ابن سينا على العالم؟ (Apakah buku Ibnu Sīnā mempengaruhi dunia?) - Benar/Salah</li>
+                    </ol>
+                </div>
+            </div>
         </div>
-        <div class="maharah">
-            <h3>📖 Qirā’ah — Membaca Biografi</h3>
-            <p><strong>Teks Biografi (3 Paragraf):</strong></p>
-            <p>وُلِدَ ابن سينا في قرية أفشينة قرب بخارى في عام 980 ميلادي. بدأ تعليمه في سن مبكرة، حيث درس القرآن الكريم والعلوم الأساسية مثل الرياضيات والفلسفة. كان ذكياً جداً، فقد حفظ القرآن في سن السابعة عشرة وأصبح معروفاً بمعرفته الواسعة في مجالات متعددة. سافر إلى مدن مختلفة مثل نيسابور وبغداد ليدرس تحت إشراف علماء كبار، مما ساعده في تطوير معرفته.</p>
-            <p>في مجال الطب، كتب ابن سينا كتاب "القانون في الطب" الذي يُعتبر أحد أهم الكتب الطبية في التاريخ. هذا الكتاب يغطي مواضيع مثل تشخيص الأمراض، علاجها، والأدوية. كما ساهم في الفلسفة من خلال كتابه "الشفاء" الذي يناقش قضايا مثل وجود الله والنفس البشرية. كان يعتقد أن العلم يجب أن يخدم الإنسانية، ولهذا السبب كتب باللغة العربية ليصل إلى جمهور أوسع.</p>
-            <p>توفي ابن سينا في عام 1037 ميلادي في همدان، بعد حياة مليئة بالإنجازات. ترك إرثاً علمياً هائلاً، حيث أثرت أعماله على العلماء في أوروبا والشرق الأوسط. يُعتبر رمزاً للعلم الإسلامي، ويُدرس في الجامعات حتى اليوم. قصته تلهم الطلاب للدراسة الجادة والابتكار في العلوم.</p>
-            <p><strong>Mufradāt Penting (Disesuaikan):</strong></p>
-            <ul>
-                <li>وُلِدَ (wulida)</li>
-                <li>الطب (al-Ṭibb)</li>
-                <li>الفلسفة (al-Falsafah)</li>
-                <li>القانون (al-Qānūn)</li>
-                <li>الشفاء (asy-Syifā')</li>
-                <li>الإرث (al-Irts)</li>
-                <li>الابتكار (al-Ibtikār)</li>
-            </ul>
-            <p><strong>Soal Pemahaman (Minimal 6 Soal):</strong></p>
-            <ol>
-                <li>أين وُلِدَ ابن سينا؟</li>
-                <li>ما هو الكتاب الشهير الذي كتبه ابن سينا في الطب؟</li>
-                <li>ما هي اللغة التي كتب بها ابن سينا أعماله؟</li>
-                <li>في أي عام توفي ابن سينا؟</li>
-                <li>ما هو مجال علم آخر الذي ساهم فيه ابن سينا غير الطب؟</li>
-                <li>لماذا يُعتبر ابن سينا رمزاً للعلم الإسلامي؟</li>
-            </ol>
-            <p>(Jawaban: 1. قرية أفشينة قرب بخارى. 2. القانون في الطب. 3. اللغة العربية. 4. 1037 ميلادي. 5. الفلسفة. 6. بسبب إنجازاته العلمية وتأثيره على العالم.)</p>
-        </div>
-        <div class="maharah">
-            <h3>✍️ Kitābah — Menulis tentang Tokoh</h3>
-            <p><strong>Latihan:</strong></p>
-            <ul>
-                <li>Melengkapi kalimat: "ابن سينا هو عالم في مجال __________." (Ibnu Sīnā adalah ilmuwan di bidang __________.)</li>
-                <li>Menyusun paragraf acak: Susun kalimat berikut menjadi paragraf: "كتب كتاب الشفاء. ساهم في الفلسفة. ابن سينا عالم مسلم."</li>
-                <li>Menulis tokoh favorit: "اكتب فقرة قصيرة عن ابن سينا (٥–٧ جمل)." (Tulis paragraf pendek tentang Ibnu Sīnā, 5–7 kalimat.)</li>
-            </ul>
-            <p>(Fitur: Siswa bisa ketik di textarea di bawah ini.)</p>
-            <textarea rows="5" placeholder="Tulis jawabanmu di sini..."></textarea>
-        </div>
-        <div class="maharah">
-            <h3>🗣️ Kalām — Menceritakan Tokoh</h3>
-            <p><strong>Aktivitas:</strong></p>
-            <ul>
-                <li>Dialog pendek: "من هو ابن سينا؟ هو عالم مسلم في مجال الطب والفلسفة." (Siapa Ibnu Sīnā? Dia adalah ilmuwan Muslim di bidang kedokteran dan filsafat.)</li>
-                <li>Monolog: "ابن سينا ولد في عام 980. ساهم في الطب من خلال كتاب القانون. توفي في 1037." (Ibnu Sīnā lahir pada tahun 980. Dia berkontribusi dalam kedokteran melalui buku Al-Qānūn. Dia meninggal pada 1037.)</li>
-            </ul>
-            <p>(Fitur: Rekam audio/video di browser modern, atau tirukan audio contoh. Praktikkan di kelas.)</p>
-        </div>
-        <div class="maharah">
-            <h3>🎧 Istimā’ — Menyimak Kisah Tokoh</h3>
-            <p><strong>Isi:</strong> Audio kisah singkat (1–2 menit): "استمع إلى النص: ابن سينا عالم مسلم كبير. ولد في 980 وتوفي في 1037. كتب كتاب القانون في الطب الذي أثر على العالم." (Dengarkan teks: Ibnu Sīnā adalah ilmuwan Muslim besar. Lahir pada 980 dan meninggal pada 1037. Dia menulis buku Al-Qānūn tentang kedokteran yang mempengaruhi dunia.)</p>
-            <p>(Placeholder: Tambah file audio MP3 di sini, misalnya <audio controls><source src="audio-ibnu-sina.mp3"></audio>)</p>
-            <p><strong>Soal Setelah Mendengar:</strong></p>
-            <ol>
-                <li>في أي عام ولد ابن سينا؟ (Pada tahun berapa Ibnu Sīnā lahir?) - Pilihan: 980, 1000, 1037</li>
-                <li>ما هو الكتاب الذي ذكر في النص؟ (Apa buku yang disebutkan dalam teks?) - Pilihan: الشفاء, القانون, القرآن</li>
-                <li>هل أثر كتاب ابن سينا على العالم؟ (Apakah buku Ibnu Sīnā mempengaruhi dunia?) - Benar/Salah</li>
-            </ol>
-        </div>
-    </div>
-</div>
-        <!-- Tambah kartu untuk 9 tokoh lain di sini -->
-        </div>
-        <div class="tokoh-card">
+        <!-- Contoh untuk tokoh lain: Abu Bakar (Tambahkan konten lengkap serupa untuk yang lain) -->
+        <div class="tokoh-card" onclick="toggleDetail('abu-bakar-detail')">
             <img src="https://via.placeholder.com/100" alt="Abu Bakar">
             <h4>Abu Bakar as-Shiddiq</h4>
             <p>Kepemimpinan & Kesetiaan</p>
+            <div id="abu-bakar-detail" class="detail-content">
+                <h2>Halaman Tokoh: Abu Bakar as-Shiddiq</h2>
+                <!-- Tambahkan profil, maharah, dll. di sini (salin dari Ibnu Sīnā dan sesuaikan konten) -->
+                <p>Konten untuk Abu Bakar akan ditambahkan di sini. Klik untuk memperluas.</p>
+            </div>
         </div>
-        <div class="tokoh-card">
+        <!-- Tambahkan card serupa untuk tokoh lain dengan onclick dan detail div -->
+        <div class="tokoh-card" onclick="toggleDetail('imam-syafii-detail')">
             <img src="https://via.placeholder.com/100" alt="Imām Syāfi‘ī">
             <h4>Imām Syāfi‘ī</h4>
             <p>Hukum Islam</p>
+            <div id="imam-syafii-detail" class="detail-content">
+                <p>Konten untuk Imām Syāfi‘ī akan ditambahkan di sini.</p>
+            </div>
         </div>
-        </div>
-        <div class="tokoh-card">
+        <div class="tokoh-card" onclick="toggleDetail('imam-ghazali-detail')">
             <img src="https://via.placeholder.com/100" alt="Imām al-Ghazālī">
             <h4>Imām al-Ghazālī</h4>
             <p>Tasawuf & Teologi</p>
+            <div id="imam-ghazali-detail" class="detail-content">
+                <p>Konten untuk Imām al-Ghazālī akan ditambahkan di sini.</p>
+            </div>
         </div>
-        <div class="tokoh-card">
+        <div class="tokoh-card" onclick="toggleDetail('salahuddin-detail')">
             <img src="https://via.placeholder.com/100" alt="Shalāhuddīn al-Ayyūbī">
             <h4>Shalāhuddīn al-Ayyūbī</h4>
             <p>Kepemimpinan Militer</p>
+            <div id="salahuddin-detail" class="detail-content">
+                <p>Konten untuk Shalāhuddīn al-Ayyūbī akan ditambahkan di sini.</p>
+            </div>
         </div>
-        </div>
+        <!-- Tambahkan tokoh lainnya serupa -->
     </div>
 </div>
 
-<div class="container" id="ibnu-sina">
-    <h2>Halaman Tokoh: Ibnu Sīnā (Avicenna)</h2>
-    <div class="profil">
-        <h3>Profil Singkat</h3>
-        <p><strong>Nama Lengkap:</strong> أبو علي الحسين بن عبد الله بن سينا (Abū ‘Alī al-Ḥusayn ibn ‘Abd Allāh ibn Sīnā)</p>
-        <p><strong>Tahun Hidup:</strong> 980–1037 M</p>
-        <p><strong>Bidang Keilmuan:</strong> الطب والفلسفة (Kedokteran dan Filsafat)</p>
-        <p><strong>Julukan:</strong> الشيخ الرئيس (Asy-Syaikh ar-Ra'is) atau "Pangeran Para Dokter"</p>
-        <p><strong>Deskripsi:</strong> Ibnu Sīnā adalah filsuf dan dokter Muslim terkemuka yang berkontribusi besar dalam ilmu kedokteran dan filsafat. Karyanya seperti "Al-Qānūn fī al-Ṭibb" menjadi dasar kedokteran modern.</p>
-    </div>
-    <div class="maharah">
-        <h3>📖 Qirā’ah — Membaca Biografi</h3>
-        <p><strong>Teks Biografi (3 Paragraf):</strong></p>
-        <p>وُلِدَ ابن سينا في قرية أفشينة قرب بخارى في عام 980 ميلادي. بدأ تعليمه في سن مبكرة، حيث درس القرآن الكريم والعلوم الأساسية مثل الرياضيات والفلسفة. كان ذكياً جداً، فقد حفظ القرآن في سن السابعة عشرة وأصبح معروفاً بمعرفته الواسعة في مجالات متعددة. سافر إلى مدن مختلفة مثل نيسابور وبغداد ليدرس تحت إشراف علماء كبار، مما ساعده في تطوير معرفته.</p>
-        <p>في مجال الطب، كتب ابن سينا كتاب "القانون في الطب" الذي يُعتبر أحد أهم الكتب الطبية في التاريخ. هذا الكتاب يغطي مواضيع مثل تشخيص الأمراض، علاجها، والأدوية. كما ساهم في الفلسفة من خلال كتابه "الشفاء" الذي يناقش قضايا مثل وجود الله والنفس البشرية. كان يعتقد أن العلم يجب أن يخدم الإنسانية، ولهذا السبب كتب باللغة العربية ليصل إلى جمهور أوسع.</p>
-        <p>توفي ابن سينا في عام 1037 ميلادي في همدان، بعد حياة مليئة بالإنجازات. ترك إرثاً علمياً هائلاً، حيث أثرت أعماله على العلماء في أوروبا والشرق الأوسط. يُعتبر رمزاً للعلم الإسلامي، ويُدرس في الجامعات حتى اليوم. قصته تلهم الطلاب للدراسة الجادة والابتكار في العلوم.</p>
-        <p><strong>Mufradāt Penting (Disesuaikan):</strong></p>
-        <ul>
-            <li>وُلِدَ (wulida) </li>
-            <li>الطب (al-Ṭibb) </li>
-            <li>الفلسفة (al-Falsafah) </li>
-            <li>القانون (al-Qānūn) </li>
-            <li>الشفاء (asy-Syifā') </li>
-            <li>الإرث (al-Irts) </li>
-            <li>الابتكار (al-Ibtikār) </li>
-        </ul>
-        <p><strong>Soal Pemahaman (Minimal 6 Soal):</strong></p>
-        <ol>
-            <li>أين وُلِدَ ابن سينا؟ </li>
-            <li>ما هو الكتاب الشهير الذي كتبه ابن سينا في الطب؟ </li>
-            <li>ما هي اللغة التي كتب بها ابن سينا أعماله؟ </li>
-            <li>في أي عام توفي ابن سينا؟ </li>
-            <li>ما هو مجال علم آخر الذي ساهم فيه ابن سينا غير الطب؟ </li>
-            <li>لماذا يُعتبر ابن سينا رمزاً للعلم الإسلامي؟ </li>
-        </ol>
-        <p>(Jawaban: 1. قرية أفشينة قرب بخارى. 2. القانون في الطب. 3. اللغة العربية. 4. 1037 ميلادي. 5. الفلسفة. 6. بسبب إنجازاته العلمية وتأثيره على العالم.)</p>
-    </div>
-    <div class="maharah">
-        <h3>✍️ Kitābah — Menulis tentang Tokoh</h3>
-        <p><strong>Latihan:</strong></p>
-        <ul>
-            <li>Melengkapi kalimat: "ابن سينا هو عالم في مجال __________." (Ibnu Sīnā adalah ilmuwan di bidang __________.)</li>
-            <li>Menyusun paragraf acak: Susun kalimat berikut menjadi paragraf: "كتب كتاب الشفاء. ساهم في الفلسفة. ابن سينا عالم مسلم."</li>
-            <li>Menulis tokoh favorit: "اكتب فقرة قصيرة عن ابن سينا (٥–٧ جمل)." (Tulis paragraf pendek tentang Ibnu Sīnā, 5–7 kalimat.)</li>
-        </ul>
-        <p>(Fitur: Siswa bisa ketik di textarea di bawah ini.)</p>
-        <textarea rows="5" placeholder="Tulis jawabanmu di sini..."></textarea>
-    </div>
-    <div class="maharah">
-        <h3>🗣️ Kalām — Menceritakan Tokoh</h3>
-        <p><strong>Aktivitas:</strong></p>
-        <ul>
-            <li>Dialog pendek: "من هو ابن سينا؟ هو عالم مسلم في مجال الطب والفلسفة." (Siapa Ibnu Sīnā? Dia adalah ilmuwan Muslim di bidang kedokteran dan filsafat.)</li>
-            <li>Monolog: "ابن سينا ولد في عام 980. ساهم في الطب من خلال كتاب القانون. توفي في 1037." (Ibnu Sīnā lahir pada tahun 980. Dia berkontribusi dalam kedokteran melalui buku Al-Qānūn. Dia meninggal pada 1037.)</li>
-        </ul>
-        <p>(Fitur: Rekam audio/video di browser modern, atau tirukan audio contoh. Praktikkan di kelas.)</p>
-    </div>
-    <div class="maharah">
-        <h3>🎧 Istimā’ — Menyimak Kisah Tokoh</h3>
-        <p><strong>Isi:</strong> Audio kisah singkat (1–2 menit): "استمع إلى النص: ابن سينا عالم مسلم كبير. ولد في 980 وتوفي في 1037. كتب كتاب القانون في الطب الذي أثر على العالم." (Dengarkan teks: Ibnu Sīnā adalah ilmuwan Muslim besar. Lahir pada 980 dan meninggal pada 1037. Dia menulis buku Al-Qānūn tentang kedokteran yang mempengaruhi dunia.)</p>
-        <p>(Placeholder: Tambah file audio MP3 di sini, misalnya <audio controls><source src="audio-ibnu-sina.mp3"></audio>)</p>
-        <p><strong>Soal Setelah Mendengar:</strong></p>
-        <ol>
-            <li>في أي عام ولد ابن سينا؟ (Pada tahun berapa Ibnu Sīnā lahir?) - Pilihan: 980, 1000, 1037</li>
-            <li>ما هو الكتاب الذي ذكر في النص؟ (Apa buku yang disebutkan dalam teks?) - Pilihan: الشفاء, القانون, القرآن</li>
-            <li>هل أثر كتاب ابن سينا على العالم؟ (Apakah buku Ibnu Sīnā mempengaruhi dunia?) - Benar/Salah</li>
-        </ol>
-    </div>
-</div>
 <div class="container" id="glosarium">
     <h2>📚 Glosarium Rijāl al-Islām</h2>
     <ul>
@@ -227,5 +185,16 @@
     <p>&copy; 2023 Website Pembelajaran Bahasa Arab MAN. Dibuat untuk pendidikan.</p>
 </footer>
 
+<script>
+    function toggleDetail(id) {
+        var element = document.getElementById(id);
+        if (element.style.display === "none" || element.style.display === "") {
+            element.style.display = "block";
+        } else {
+            element.style.display = "none";
+        }
+    }
+</script>
+
 </body>
-</html
+</html>
