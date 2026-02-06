@@ -98,12 +98,12 @@
         </ul>
         <p><strong>Soal Pemahaman (Minimal 6 Soal):</strong></p>
         <ol>
-            <li>أين وُلِدَ ابن سينا؟ (Di mana Ibnu Sīnā lahir?)</li>
-            <li>ما هو الكتاب الشهير الذي كتبه ابن سينا في الطب؟ (Apa buku terkenal yang ditulis Ibnu Sīnā tentang kedokteran?)</li>
-            <li>ما هي اللغة التي كتب بها ابن سينا أعماله؟ (Bahasa apa yang digunakan Ibnu Sīnā untuk menulis karyanya?)</li>
-            <li>في أي عام توفي ابن سينا؟ (Pada tahun berapa Ibnu Sīnā meninggal?)</li>
-            <li>ما هو مجال علم آخر الذي ساهم فيه ابن سينا غير الطب؟ (Bidang ilmu apa lagi yang disumbangkan Ibnu Sīnā selain kedokteran?)</li>
-            <li>لماذا يُعتبر ابن سينا رمزاً للعلم الإسلامي؟ (Mengapa Ibnu Sīnā dianggap simbol ilmu Islam?)</li>
+            <li>أين وُلِدَ ابن سينا؟ </li>
+            <li>ما هو الكتاب الشهير الذي كتبه ابن سينا في الطب؟ </li>
+            <li>ما هي اللغة التي كتب بها ابن سينا أعماله؟ </li>
+            <li>في أي عام توفي ابن سينا؟ </li>
+            <li>ما هو مجال علم آخر الذي ساهم فيه ابن سينا غير الطب؟ </li>
+            <li>لماذا يُعتبر ابن سينا رمزاً للعلم الإسلامي؟ </li>
         </ol>
         <p>(Jawaban: 1. قرية أفشينة قرب بخارى. 2. القانون في الطب. 3. اللغة العربية. 4. 1037 ميلادي. 5. الفلسفة. 6. بسبب إنجازاته العلمية وتأثيره على العالم.)</p>
     </div>
